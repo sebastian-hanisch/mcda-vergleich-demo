@@ -74,7 +74,7 @@ PRESETS = {
 PRESET_HELP = {
     "Standardfall (exakte Gewichte, additiver Entscheider)": "Die Verfahren kennen die Gewichte des Entscheiders und er ist additiv: Die Summe und PROMETHEE treffen am häufigsten.",
     "Verrauschte Gewichte": "Dieselbe Matrix wie im Standardfall, aber die Gewichte sind verrauscht (σ = 0,6): Die Verfahren, die Gewichte brauchen, verlieren im Mittel Treffer.",
-    "Nicht additiv": "Der Entscheider schließt Alternativen mit einem sehr schlechten Kriterium aus: Keines der gewichteten Verfahren schützt davor.",
-    "Korrelierte Kriterien": "Kriterien mit Korrelation 0,5: Die Verfahren liegen dichter beieinander, weil weniger Raum für Zielkonflikte bleibt.",
+    "Nicht additiv": "Der Entscheider schließt Alternativen mit einem sehr schlechten Kriterium aus: Im gezeigten Fall schützt keines der gewichteten Verfahren davor.",
+    "Korrelierte Kriterien": "Kriterien mit Korrelation 0,5: Die Verfahren liegen dichter beieinander, vermutlich weil weniger Raum für Zielkonflikte bleibt.",
     "Einig und falsch": "Verrauschte Gewichte, und alle gewichteten Verfahren wählen dasselbe, aber nicht den Besten: Sie teilen die Eingabe und damit den Fehler.",
 }

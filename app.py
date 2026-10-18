@@ -87,7 +87,7 @@ def verdict(kind_text):
 st.title("⚖️ Welches Verfahren, gemessen woran?")
 st.markdown(
     """
-**Welches Verfahren trifft, hängt weniger am Verfahren als an dem, was es weiß und was es annimmt.** Dies ist das fünfzehnte und letzte Stück der Linie
+**Welches Verfahren trifft, hängt in dieser Welt weniger am Verfahren als an dem, was es weiß und was es annimmt.** Dies ist das fünfzehnte und letzte Stück der Linie
 **Mehrkriterien-Ranking**: Zehn Verfahren der Linie bekommen dieselbe Entscheidungsmatrix und werden gegen den **verborgenen Nutzen** eines simulierten Entscheiders gemessen
 (Platz 1 getroffen, Kendalls τ, Nutzenverlust, Stabilität). Die Zahlen gelten **in dieser simulierten Welt**, für diesen Entscheider und diese Gewichte; es ist keine
 Verfahrensempfehlung.

@@ -245,7 +245,7 @@ def verdict_weights(res: dict) -> tuple[str, str]:
     corr = _cell(res, 0.0, 0.5)
     text = (f"Mit Erhebungsrauschen 0,6 auf den Gewichten fällt die Summe von {pct(exact['sum_nom'])} auf {pct(mid['sum_nom'])} % und ELECTRE I von {pct(exact['electre'])} auf "
             f"{pct(mid['electre'])} %; bei Rauschen 1,0 sind es {pct(high['sum_nom'])} % (gleiche Gewichte, die keine Gewichte brauchen: {pct(high['equal'])} %). Bei korrelierten "
-            f"Kriterien (ρ = 0,5) schrumpft die Spanne zwischen dem besten und dem schlechtesten Verfahren von {de(100 * hit_spread(_cell(res, 0.0, 0.0)), 1)} auf "
+            f"Kriterien (ρ = 0,5) schrumpft die Spanne zwischen dem besten und dem schlechtesten Verfahren (eine stark streuende Max-Min-Größe) von {de(100 * hit_spread(_cell(res, 0.0, 0.0)), 1)} auf "
             f"{de(100 * hit_spread(corr), 1)} Punkte.")
     return "warning", text
 

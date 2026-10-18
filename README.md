@@ -14,23 +14,23 @@ kein Mensch. Die Zahlen gelten **in dieser simulierten Welt**, für diese Entsch
 
 ## Warum dieses Problem
 
-**Welches Verfahren trifft, hängt weniger am Verfahren als an dem, was es weiß und was es annimmt.** Die Kernfrage der Demo: Was kostet es, wenn die Gewichte ungenau sind, wenn der
+**Welches Verfahren trifft, hängt in dieser Welt weniger am Verfahren als an dem, was es weiß und was es annimmt.** Die Kernfrage der Demo: Was kostet es, wenn die Gewichte ungenau sind, wenn der
 Entscheider nicht additiv ist, und was zeigt es, dass mehrere Verfahren denselben Sieger wählen?
 
 ## Befunde und Korrekturen gegenüber dem Plan
 
 - **Bei exakt bekannten Gewichten und additivem Entscheider treffen drei Verfahren im Rauschen beieinander:** gewichtete Summe auf der Nenn-Spannweite 77,5 %, auf Min-Max 79,0 %,
   PROMETHEE II 78,0 % (Entscheider mit linearem Güte-Nutzen). TOPSIS 70,0 / 71,0 %, ELECTRE I 70,5 %, AHP 68,0 %; gleiche Gewichte 54,5 %, SMAA ohne Gewichtswissen 54,0 %, DEA-
-  Kreuzeffizienz 47,5 %. Der Standardfehler ist 3 Punkte; die drei vorderen unterscheiden sich nicht belastbar.
-- **Die Verfahren mit eigener Aggregationsregel verlieren 6,5 bis 9,5 Punkte an die Summe,** weil der Entscheider additiv ist (ELECTRE, TOPSIS, AHP). Das ist ein Befund über diese
-  Welt: Ein nicht additiver Entscheider würde die Reihenfolge verschieben.
+  Kreuzeffizienz 47,5 %. Der Standardfehler ist 3 Punkte; die drei vorderen unterscheiden sich nicht belastbar. Die Absolutwerte hängen an den 200 festen Matrizen: In 1000 frischen liegen einige Verfahren bis zu 8 Punkte anders, die Reihenfolge der drei vorderen und der Abstand zur Gruppe bleiben.
+- **Die Verfahren mit eigener Aggregationsregel (ELECTRE, TOPSIS, AHP) treffen seltener als die Summe,** in den 200 festen Matrizen 6,5 bis 9,5 Punkte, in 1000 frischen 8 bis 18; ob das am additiven Entscheider liegt, zeigt die Demo nicht. Das ist ein Befund über diese
+  Welt; der Abstand bleibt auch beim Entscheider mit Untergrenze (AHP 58,0 gegen 71,5 % der Summe).
 - **Mit Untergrenze trifft das beste Verfahren 71,5 %** (Summe, beide Skalen); der Nutzenverlust der gewichteten Verfahren liegt zwischen 14,3 und 28,2 %, bei gleichen Gewichten
   12,1 % und bei SMAA 11,1 %: Die gewichteten Verfahren treffen häufiger, verlieren im Mittel aber mehr Nutzen (eine ausgeschlossene Wahl zählt 100 %).
-- **Gewichte kosten Treffer:** Mit Erhebungsrauschen 0,6 fällt die Summe von 77,5 auf 63,5 %, ELECTRE von 70,5 auf 53,5 %; bei Rauschen 1,0 sind es 54,0 % und damit nicht mehr als
-  die gleichen Gewichte (54,5 %).
+- **Gewichte kosten Treffer:** Mit Erhebungsrauschen 0,6 fällt die Summe von 77,5 auf 63,5 %, ELECTRE von 70,5 auf 53,5 %; bei Rauschen 1,0 sind es in den 200 festen Matrizen 54,0 % und damit so viel wie
+  die gleichen Gewichte (54,5 %); in einer größeren Stichprobe bleibt die Summe darüber.
 - **Übereinstimmung ist kein Beleg:** Die sieben Verfahren, die dieselben Gewichte bekommen, wählen in 33,0 bis 39,0 % der Matrizen denselben Sieger. Der ist bei exakten Gewichten
-  immer der Beste (100,0 %), bei Rauschen 0,6 nur in 87,7 %, bei 1,0 in 75,8 %: Sie teilen die Eingabe und damit den Fehler.
-- **Korrelierte Kriterien rücken die Verfahren zusammen:** Bei ρ = 0,5 schrumpft die Spanne zwischen bestem und schlechtestem Verfahren von 31,5 auf 11,0 Punkte.
+  bei linearem Güte-Nutzen in allen 69 Fällen der Beste (100,0 %), bei Rauschen 0,6 in 87,7 %, bei 1,0 in 75,8 %: Sie teilen die Eingabe und damit den Fehler, Einigkeit ist kein Beweis.
+- **Korrelierte Kriterien rücken die Verfahren zusammen:** Bei ρ = 0,5 schrumpft die Spanne zwischen bestem und schlechtestem Verfahren etwa auf die Hälfte (31,5 auf 11,0 Punkte in den festen Matrizen; in 1000 frischen 39 auf 20).
 - **Stabilität ist keine Richtigkeit:** Bei 5 % Rauschen auf den Rohwerten bleibt der Sieger bei TOPSIS (Vektor) in 94,5 % der Matrizen, bei ELECTRE I in 82,0 %.
 - **Jedes Experiment startet auf eigenen Klick** (einige Sekunden bis rund 30 Sekunden).
 
